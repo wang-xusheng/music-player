@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./image/背景_画板.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column
+}
+
+.top-fill {
+    flex: 1 0 auto;
+}
+
+.background>.loves {
+    display: flex;
+    justify-content: right;
+    margin: 0 20px;
+    width: calc(100vw - 40px);
+    height: 25px;
+}
+
+.background>.loves>.loves-icon {
+    width: 112px;
+    height: 20px;
+    background-image: url(./image/上部爱心.png);
+    background-size: cover;
+}
+
+.player-block {
+    width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+    border: 4px solid rgb(176, 92, 125);
+    margin: 0 16px;
+}
+
+.player-block-content {
+    position: relative;
+    width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+}
+
+.music-wave {
+    width: 87px;
+    height: 48px;
+    background-image: url(./image/音波.png);
+    background-size: cover;
+
+}
+
+.music-dial {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    background-image: url(./image/光盘.png);
+    background-size: cover;
+    transition-duration: 1s;
+    transition-timing-function:linear;
+}
+
+.broad-caster {
+    position: absolute;
+    width: 33%;
+    height: 41%;
+    background-image: url(./image/播音器.png);
+    background-size: cover;
+    top: 10px;
+    right: 10px;
+
+}
+
+.music-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+}
+
+.music-title .music-title-icon {
+    width: 80%;
+    height: 90%;
+    background-image: url(./image/英文.png);
+    background-size: cover;
+}
+
+.player-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vw;
+}
+
+.player-key .player-key-icon {
+    width: 28px;
+    height: 36px;
+    background-image: url(./image/暂停.png);
+    background-size: cover;
+}
+
+.progress-bar {
+    position: relative;
+    width: 80%;
+    height: 10vw;
+    margin: 0 10%;
+    background-image: url(./image/进度条.png);
+    background-size: cover;
+}
+
+.progress-bar .progress-icon {
+    position: absolute;
+    width: 9vw;
+    height: 8vw;
+    left: 0;
+    background-image: url(./image/流动进程.png);
+    background-size: cover;
+}
+
+.logo {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo .logo-image {
+    width: 100vw;
+    height: 27vw;
+    background-image: url(./image/logo.png);
+    background-size: cover;
+}
